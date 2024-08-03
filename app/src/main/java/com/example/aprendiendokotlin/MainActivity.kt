@@ -29,8 +29,15 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    @SuppressLint("SetTextI18n")
     private fun actions() {
+        onClick()
+        var myDouble = 1.2f
+        myDouble = 1.3f
+        println(myDouble)
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun onClick() {
         binding.button.setOnClickListener {
             val text1 = binding.edt1.text.toString()
             val text2 = binding.edt2.text.toString()
